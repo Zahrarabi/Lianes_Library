@@ -13,16 +13,6 @@ connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
 
 
-
-
-
-
-
-
-
-
-
-
 st.title(":blue[liane Library]")
 st.write("📊 Library Dashboard")
 
@@ -53,22 +43,6 @@ with tab1:
     st.header(':blue[Delayed books]')
     st.dataframe(delayed_books())
     st.divider()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -151,16 +125,6 @@ with tab1:
 
 
 
-
-
-
-
-
-
-    
-
-
-
 with tab2:
     
         st.subheader(":blue[Add Friend]")
@@ -212,9 +176,6 @@ with tab2:
             else:
                 delete_friend(friend_id)
                 st.success("Friend deleted successfully.")
-
-
-
 
 
 
